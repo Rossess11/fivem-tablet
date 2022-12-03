@@ -29,3 +29,6 @@ CONTROLS
 IMAGES
 
   ![tablet1](https://user-images.githubusercontent.com/59504554/205461139-7d627142-7b52-47e5-a05b-36702c1488bc.png)
+  ![tablet2](https://user-images.githubusercontent.com/59504554/205461157-7f708aeb-1520-4e04-a518-332325fd05f6.png)
+
+  
