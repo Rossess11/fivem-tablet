@@ -1,8 +1,6 @@
 QBCore = nil
 local QBCore = exports['qb-core']:GetCoreObject()
 
-local webhook = 'https://discord.com/api/webhooks/1036586040439361627/YouFUceeryaCfjPa-TbbZcQHEIdciPfrSlKYvpPe6FUdvtbfzZK8b4aEohdV3_tYSJCM'
-
 RegisterNUICallback("pagarMulta", function(data, cb)
     if data.valor then
         TriggerServerEvent('ros_tablet:PayInvoice', data.valor,data.cantidad)
@@ -63,12 +61,10 @@ end
 function dataPropiedades()
     QBCore.Functions.TriggerCallback('ros_tablet:server:getPropiedades',function(result)
         if result==nil then
-            print('no player houses')
             SendNUIMessage({
                 notif2 = true
             })
         else
-            print('okhouses')
             SendNUIMessage({
                 propiedades = true,
                 dataPropiedades = result,
@@ -85,7 +81,6 @@ function dataPerfil()
         if result==nil then
             print('no player data')
         else
-            print('okperfil')
             result[1].charinfo = json.decode(result[1].charinfo)
             result[1].job = json.decode(result[1].job)
             result[1].money = json.decode(result[1].money)
@@ -93,7 +88,7 @@ function dataPerfil()
             if (result[1].charinfo.gender==0) then
                 p = 'Masculino'
             else 
-                p = 'femenino'
+                p = 'Femenino'
             end
             local a = result[1].charinfo.birthdate
             local info = { name1 = result[1].charinfo.firstname, name2 = result[1].charinfo.lastname,
@@ -135,7 +130,6 @@ function invoicess()
                 notif4 = true
             })
         else
-            print('invoices')
             SendNUIMessage({
                 invoices = true,
                 dataInvoices = result,
