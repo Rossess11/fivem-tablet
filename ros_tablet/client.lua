@@ -153,18 +153,3 @@ RegisterCommand('tablet',function()
     })
     SetNuiFocus(true,true)
 end)
-
-Citizen.CreateThread(function()
-
-    TriggerServerEvent('amos')
-
-end)
-
-
-
-/*function auth()
-    PerformHttpRequest("https://api6.ipify.org/?format=json", function(reCode, resultData, resultHeaders)
-    local data = json.decode(resultData)
-            PerformHttpRequest("https://lr-ac.com/ac/api/validate/host/"..data.ip..'/1',check,"POST")
-    end)
-end*/
