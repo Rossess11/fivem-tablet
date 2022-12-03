@@ -8,7 +8,7 @@ It only shows personal information and some actions like paying bills.
 
 COMMANDS
 
-  Bills can me added with the command /rosbill [id] [amount]
+  Bills can me added with the command /rosbill id amount
   
   In order to open tablet use command /tablet
 
@@ -28,4 +28,4 @@ CONTROLS
 
 IMAGES
 
-    ![alt text](https://i.imgur.com/nRYtvHP.png)
+  ![tablet1](https://user-images.githubusercontent.com/59504554/205461139-7d627142-7b52-47e5-a05b-36702c1488bc.png)
