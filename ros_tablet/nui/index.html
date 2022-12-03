@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ros_Tablet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="scripting/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/afab87ce15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="imagen-tablet"></div>
+    <div id="cerrar-tablet"><i class="fa-solid fa-power-off"></i></div>
+    <div id="tablet">
+        <audio id="audio" controls>
+            <source type="audio/mp3" src="audio.mp3">
+        </audio>
+        <div id="inicio">
+            <button id="iniciar"><i class="fa-sharp fa-solid fa-feather-pointed"></i></button>
+            <span id="hora-inicio"></span>
+            <span id="copyrightInit"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+        </div>
+        <div id="reloj">hh:mm:ss</div>
+        <div id="notificacion"><i class="fa-solid fa-envelope"></i> Notificacion</div>
+        <div id="menu">
+            <button id="profile"><i class="fa-solid fa-user"></i></button>
+            <button id="vehicles"><i class="fa-solid fa-car"></i></button>
+            <button id="propiedades"><i class="fa-solid fa-house"></i></button>
+            <button id="multas"><i class="fa-solid fa-file-invoice"></i></button>
+            <button id="bank"><i class="fa-solid fa-building-columns"></i></button>
+        </div>
+        <div id="pagina-profile">
+            <button id="cerrar-profile"><i class="fa-solid fa-xmark"></i></button>
+            <span id="titulo-profile">Profile</span>
+            <div id="cabecera-profile">
+                <div id="imagen-profile"></div>
+                <span id="nombre-output">Rosses Rosses</span>
+                <div id="image-edit"><i class="fa-solid fa-chevron-right"></i>
+                    <input type="text" id="input-image"></input>
+                    <button id="aceptar-foto"><i class="fa-solid fa-check"></i></button>
+                </div>
+                <span id="texto-conf-img">Configurar imagen de perfil</span>
+                <span id="idd">Tu id: </span>
+            </div>
+            <div id="info">
+                <span id="telefono">Telefono:</span><br>
+                <span id="trabajo">Trabajo:</span><br>
+                <span id="fecha">Fecha nacimiento:</span><br>
+                <span id="genero">Genero:</span><br>
+                <span id="nacionalidad">Nacionalidad:</span>
+            </div>
+            <span id="copyright"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+        </div>
+        <div id="pagina-vehicles">
+            <div id="vehicle-ops">
+                <div id="ops1">Nombre</div>
+                <div id="ops2">Garage</div>
+                <div id="ops3">Matricula</div>
+            </div>
+            <button id="cerrar-vehicles"><i class="fa-solid fa-xmark"></i></button>
+            <span id="titulo-vehicles">Vehiculos</span>
+            <div id="tabla-vehicles"></div>
+            <span id="copyright"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+        </div>
+        <div id="pagina-bank">
+            <button id="cerrar-bank"><i class="fa-solid fa-xmark"></i></button>
+            <span id="copyright"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+            <div id="pagina2-bank">
+                <div id="tarjeta">
+                    <div id="chip"></div>
+                    <div id="logo"></div>
+                    <div id="numero-tarjeta">XXXX XXXX XXXX XXXX</div>
+                    <div id="nombre-tarjeta">Rosses Rosses</div>
+                </div>
+                <span id="balance">Balance: (Necesita tarjeta)</span>
+                <span id="tarjetass">Tarjetas: </span>
+                <div id="tabla-cards"></div>
+                <div id="ops-cards">
+                    <span id="numero-card">Numero de tarjeta</span>
+                    <span id="pin-card">PIN</span>
+                    <span id="tipo-card">Tipo</span>
+                </div>
+            </div>
+        </div>
+        <div id="pagina-multas">
+            <button id="cerrar-multas"><i class="fa-solid fa-xmark"></i></button>
+            <span id="titulo-multas">Facturas</span>
+            <div id="ops-facturas">
+                <div id="id-factura">Identificador</div>
+                <div id="precio-factura">Precio</div>
+                <div id="sender-factura">Remitente</div>
+                <div id="sociedad-factura">Sociedad</div>
+            </div>
+            <span id="copyright"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+            <div id="tabla-multas"></div>
+        </div>
+        <div id="pagina-propiedades">
+            <span id="titulo-propiedades">Propiedades</span>
+            <button id="cerrar-propiedades"><i class="fa-solid fa-xmark"></i></button>
+            <span id="copyright"><i class="fa-solid fa-paper-plane"></i> Rosses System</span>
+            <div id="ops-propiedades">
+                <div id="nombre-propiedades">Propiedades</div>
+            </div>
+            <div id="tabla-propiedades"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

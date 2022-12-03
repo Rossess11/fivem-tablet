@@ -1,0 +1,816 @@
+@font-face {
+    font-family: ros;
+    src: url('apple.ttf')
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+::-webkit-scrollbar {
+    display: none;
+}
+
+#audio{
+    display: none
+}
+
+#imagen-tablet  {
+    position: absolute;
+    overflow: hidden;
+    left:460px;
+    top: 180px;
+    background-image: url('tablet.png');
+    width: 1100px;
+    height: 900px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#cerrar-tablet {
+    position: absolute;
+    border-radius: 50%;
+    color: rgb(90, 90, 90);
+    display: none;
+    z-index: 1;
+    left: 1443px;
+    top: 523px;
+}
+
+#tablet {
+    border-radius: 5px;
+    font-family: ros;
+    position: absolute;
+    background-image: url("bg-tarjeta-02.png");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 827px;
+    height: 580px;
+    top: 241px;
+    left: 582px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: none;
+}
+
+#copyrightInit {
+    font-size: 12px;
+    position: absolute;
+    top: 44%;
+    left: 43%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 white;
+    border-radius: 20px;
+}
+
+#inicio {
+    border-radius: 5px;
+    position: absolute;
+    background-image: url("bg-tarjeta-01.png");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 827px;
+    height: 580px;
+    z-index: 99999999;
+}
+
+#reloj {
+    font-size: 11px;
+    padding: 5px;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    border-radius: 50px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 5px 0 white;
+}
+
+#hora-inicio {
+    position: absolute;
+    left: 43%;
+    top: 20%;
+    font-size: 50px;
+    font-stretch:ultra-condensed;
+    font-weight: lighter;
+    color: white;
+}
+
+#notificacion {
+    align-items: center;
+    font-size: 12px;
+    background-color: white;
+    position: absolute;
+    left: 3%;
+    border-radius: 50px;
+    padding: 8px;
+    top: 3%;
+    max-width: 120px;
+    display: none;
+    z-index: 100;
+    vertical-align: center;
+}
+
+#iniciar {
+    font-family: ros;
+    font-size : 13px;
+    text-align: center;
+    position: absolute;
+    left: 48%;
+    top: 80%;
+    border: none;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px 0 white;
+    border-radius: 50%;
+    padding: 10px;
+    animation: .3s ease-in-out;
+}
+
+#iniciar:hover {
+    background-color: black;
+    color: white;
+}
+
+#menu {
+    position: absolute;
+    width: 460px;
+    height: 100px;
+    display: none;
+    left: 23%;
+    top: 65%;
+}
+
+#menu button {
+    margin: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0 white;
+    border: none;
+}
+
+#menu button:hover {
+    transform: scale(1.1,1.1);
+}
+
+#pagina-profile {
+    position: absolute;
+    background-color: rgb(242, 242, 247);
+    width: 827px;
+    height: 580px;
+    display: none;
+    border-radius: 5px;
+    overflow: hidden scroll;
+}
+
+#copyright {
+    font-size: 12px;
+    position: absolute;
+    top: 120%;
+    left: 45%;
+    padding-bottom: 20px;
+}
+
+#cerrar-profile {
+    font-size: 6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    transition: .3s;
+}
+
+#cerrar-profile:hover {
+    background-color: lightcoral;
+}
+
+#titulo-profile {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-family: ros;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#cabecera-profile {
+    position: absolute;
+    background-color: white;
+    width: 740px;
+    height: 120px;
+    left: 5%;
+    top: 30%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#imagen-profile {
+    position: absolute;
+    left: 3%;
+    top: 11%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url("personal.png");
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#nombre-output {
+    font-weight: 300;
+    font-size: 22px;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+}
+
+#idd {
+    font-size: 15px;
+    position: absolute;
+    left: 20%;
+    top: 62%;
+}
+
+#image-edit {
+    background-color: white;
+    padding-top: 50px;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    right: -350px;
+    border-radius: 25px;
+    width: 400px;
+    height: 70px;
+    border: none;
+    transition: .4s;
+}
+
+#aceptar-foto {
+    position: absolute;
+    left: 180px;
+    top: 85px;
+    border-radius: 50%;
+    border:none;
+    width: 30px;
+    height: 30px;
+    transition: .3s;
+}
+
+#aceptar-foto:hover {
+    background-color: white;
+}
+
+#image-edit:hover {
+    background-color: lightgray;
+    transform: translateX(-300px);
+}
+
+#input-image {
+    position: absolute;
+    right: 100px;
+    height: 24px;
+    border-radius: 50px;
+    border: 2px solid rgb(242, 242, 247,0.7);
+    width: 200px;
+    top: 45px;
+}
+
+#texto-conf-img {
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+#info {
+    position: absolute;
+    background-color: white;
+    width: 740px;
+    height: 280px;
+    left: 5%;
+    top: 60%;
+    border-radius: 20px;
+}
+
+#telefono {
+    position: absolute;
+    left: 6%;
+    top: 16%;
+}
+
+#trabajo {
+    position: absolute;
+    left: 6%;
+    top: 32%;
+}
+
+#genero {
+    position: absolute;
+    left: 6%;
+    top: 48%;
+}
+
+#fecha {
+    position: absolute;
+    left: 6%;
+    top: 64%;
+}
+
+#nacionalidad {
+    position: absolute;
+    left: 6%;
+    top: 80%;
+}
+
+/* Vehiculos */
+
+#pagina-vehicles {
+    position: absolute;
+    background-color: rgb(242, 242, 247);
+    width: 827px;
+    height: 580px;
+    display: none;
+    border-radius: 5px;
+    overflow: hidden scroll;
+}
+
+#cerrar-vehicles {
+    font-size: 6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    transition: .3s;
+}
+
+#cerrar-vehicles:hover {
+    background-color: lightcoral;
+}
+
+#titulo-vehicles {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-family: ros;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#vehicle-ops {
+    position: absolute;
+    width: 638px;
+    height: 50px;
+    left: 8%;
+    top: 33%;
+    background-color:rgb(242, 242, 247);
+    border-radius: 8px;
+    z-index: 2;
+    align-items: center;
+    padding-left: 40px;
+    overflow: hidden;
+}
+
+#ops1,#ops2,#ops3{
+    font-size: 13px;
+    position: absolute;
+    width:190px;
+    height:20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    top: 15px;
+    padding-top: 4px;
+}
+
+#ops1{
+    left: 20px;
+}
+#ops2{
+    left: 240px;
+}
+#ops3{
+    left: 465px;
+}
+
+
+
+#tabla-vehicles {
+    font-size: 13px;
+    position: absolute;
+    font-family: ros;
+    background-color: white;
+    width: 710px;
+    height: 350px;
+    left: 5%;
+    top: 30%;
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden scroll;
+    padding-top: 100px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+/*Banco*/
+
+#pagina-bank {
+    position: absolute;
+    background-color: rgb(242, 242, 247);
+    width: 827px;
+    height: 580px;
+    display: none;
+    border-radius: 5px;
+    overflow: hidden scroll;
+}
+
+#cerrar-bank {
+    font-size: 6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    transition: .3s;
+}
+
+#cerrar-bank:hover {
+    background-color: lightcoral;
+}
+
+
+#pagina2-bank {
+    position: absolute;
+    background-color: white;
+    width: 540px;
+    height: 580px;
+    left: 17%;
+    top: 10%;
+    border-radius: 20px;
+}
+
+#tarjeta {
+    position: absolute;
+    background-image: url('bg-tarjeta.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 180px;
+    top: 10%;
+    left: 23%;
+}
+
+#chip {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    left: 7%;
+    top: 30%;
+    background-image: url('chip-tarjeta.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#logo  {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    right: 7%;
+    top: 10%;
+    background-image: url('mastercard.png');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#numero-tarjeta {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    bottom: 26%;
+    left: 8%;
+}
+
+#nombre-tarjeta {
+    position: absolute;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    bottom: 11%;
+    left: 8%;
+}
+
+#balance {
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 29%;
+    font-size: 20px;
+}
+
+#tarjetass {
+    text-align: center;
+    position: absolute;
+    color: black;
+    top: 60%;
+    left: 11%;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:rgb(242, 242, 247) ;
+}
+
+#tabla-cards {
+    font-size: 13px;
+    position: absolute;
+    left: 10%;
+    top: 68%;
+    background-color: rgb(242, 242, 247);
+    width: 420px;
+    height: 110px;
+    border-radius: 10px;
+    padding: 5px;
+    padding-top: 50px;
+}
+
+#ops-cards {
+    position: absolute;
+    left: 11.5%;
+    top: 70%;
+    width: 410px;
+    height: 30px;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+#numero-card{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(242, 242, 247);
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#pin-card{
+    position: absolute;
+    left: 170px;
+    top: 4px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(242, 242, 247);
+    color: rgb(0, 0, 0);
+}
+
+#tipo-card{
+    position: absolute;
+    left: 260px;
+    top: 4px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: rgb(242, 242, 247);
+    color: rgb(0, 0, 0);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*multas*/
+
+#pagina-multas {
+    position: absolute;
+    background-color: rgb(242, 242, 247);
+    width: 827px;
+    height: 580px;
+    display: none;
+    border-radius: 5px;
+    overflow: hidden scroll;
+}
+
+#cerrar-multas {
+    font-size: 6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    transition: .3s;
+}
+
+#cerrar-multas:hover {
+    background-color: lightcoral;
+}
+
+#titulo-multas {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-family: ros;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#ops-facturas {
+    position: absolute;
+    width: 655px;
+    height: 50px;
+    left: 8%;
+    top: 35%;
+    border-radius: 10px;
+    text-align: center;
+    background-color:rgb(242, 242, 247);
+    z-index: 1;
+}
+
+#id-factura,#precio-factura,#sender-factura,#sociedad-factura{
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 13px;
+    top: 11px;
+    width: 150px;
+}
+
+#id-factura {
+    left: 1%;
+}
+
+#precio-factura {
+    left: 26%;
+}
+
+#sender-factura {
+    left: 51%;
+}
+
+#sociedad-factura {
+    left: 76%;
+}
+
+#tabla-multas {
+    font-size: 13px;
+    position: absolute;
+    font-family: ros;
+    background-color: white;
+    width: 710px;
+    height: 350px;
+    left: 5%;
+    top: 30%;
+    border-radius: 20px;
+    overflow: hidden scroll;
+    padding: 20px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* propiedades*/
+
+#pagina-propiedades {
+    position: absolute;
+    background-color: rgb(242, 242, 247);
+    width: 827px;
+    height: 580px;
+    display: none;
+    border-radius: 5px;
+    overflow: hidden scroll;
+}
+
+#cerrar-propiedades {
+    font-size: 6px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    transition: .3s;
+}
+
+#cerrar-propiedades:hover {
+    background-color: lightcoral;
+}
+
+#titulo-propiedades {
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-family: ros;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#tabla-propiedades {
+    font-size: 13px;
+    position: absolute;
+    font-family: ros;
+    background-color: white;
+    width: 270px;
+    max-height: 200px;
+    left: 31.5%;
+    top: 30%;
+    border-radius: 20px;
+    overflow: hidden scroll;
+    padding: 20px;
+    padding-left: 100px;
+    padding-top: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#ops-propiedades {
+    position: absolute;
+    width: 155px;
+    height: 30px;
+    background-color: rgb(242, 242, 247);
+    color: black;
+    top: 34%;
+    left: 42%;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+#nombre-propiedades {
+    font-size: 13px;
+    border-radius: 20px;
+    text-align:center;
+    position: absolute;
+    background-color: white;
+    left: 26%;
+    top: 20%;
+    padding: 7px;
+
+}
+
+/*animaciones*/
