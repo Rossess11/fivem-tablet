@@ -76,14 +76,6 @@ RegisterNetEvent('ros_tablet:fotoasql', function(foto)
     MySQL.update('UPDATE players SET profilesImages = ? WHERE citizenid = ?',{foto,pData.PlayerData.citizenid})
 end)
 
-RegisterNetEvent('amos', function(ok)
-    local data
-    PerformHttpRequest("https://githubbox.com/Rossess11/licenses/blob/main/licenses.txt", function(reCode, resultData, resultHeaders)
-    data = json.decode(resultData)
-    end)
-    print(data)
-end)
-
 
 QBCore.Commands.Add('rosbill', 'Bill A Player', {{name = 'id', help = 'Player ID'}, {name = 'amount', help = 'Fine Amount'}}, false, function(source, args)
     local biller = QBCore.Functions.GetPlayer(source)
