@@ -4,13 +4,8 @@
 }
 
 
-/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
 ::-webkit-scrollbar {
     display: none;
-}
-
-#audio{
-    display: none
 }
 
 #imagen-tablet  {
